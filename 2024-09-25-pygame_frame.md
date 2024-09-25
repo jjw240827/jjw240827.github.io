@@ -1,4 +1,5 @@
 ---
+published : true
 title:  " python 게임 개발 틀"
 excerpt: "python강의를 통해서 배운 게임 개발의 기초 틀을 설명"
 
@@ -107,7 +108,7 @@ while running:
         if event.type == pygame.QUIT:
             running = False
             
-# -----------------------------------------------------
+# ---------------------------------------------------------
         if event.type == pygame.KEYDOWN: # 키를 눌렀을 때(KEYDOWN은 대문자)
             if event.key == pygame.K_LEFT: # (event.keys는 소문자, K_LEFT는 대문자)
                 character_to_x -= character_speed
@@ -284,7 +285,7 @@ for ball_idx, ball_val in enumerate(balls): # balls에는 리스트안에 공들
 
 3. for문 안에서 if문으로 충돌처리, 
 
-4. 충돌된 공, 무기 없애기
+4. 충돌된 공과 무기 없애기
 
 ## 5. 화면에 , 게임 시간, 승리 패배 메시지
 ```
